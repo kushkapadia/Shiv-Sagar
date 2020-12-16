@@ -1,0 +1,413 @@
+        * {
+            Margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Ubuntu:wght@300&display=swap');
+        /* ------Header----*/
+        
+        header {
+            padding: 20px;
+            background-color: rgba(51, 43, 43, 0.952);
+            font-family: 'Nerko One', cursive;
+        }
+        
+        .site-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        li a {
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            font-size: 27px;
+            color: rgb(252, 208, 13);
+            font-weight: bold;
+        }
+        
+        li a:hover {
+            background-color: rgb(182, 130, 34);
+            color: #fff;
+        }
+        
+        .active {
+            border-bottom: 4px solid rgb(182, 130, 34);
+        }
+        
+        .logo {
+            color: White;
+        }
+        
+        .logo h1 {
+            font-size: 35px;
+            border-top: 2px solid yellow;
+        }
+        
+        .logo p {
+            color: green;
+            text-align: center;
+            border-bottom: 2px solid yellow;
+        }
+        /* header---end*/
+        /* hero start*/
+        
+        .hero {
+            background-image: url('images/pizza-3007395_1920.jpg');
+            width: 100%;
+            top: 0;
+            background-size: cover;
+            height: 90vh;
+            position: relative;
+        }
+        
+        .btn {
+            /* left: 45%; */
+            left: 9%;
+            /* transform: translateX(-50%); */
+            top: 70%;
+            position: absolute;
+            padding: 15px 25px;
+            background-color: rgb(243, 182, 13);
+            border: 2px solid #fff;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            transition: all .6s ease-out;
+        }
+        
+        .btn:hover {
+            transform: translateY(-20px);
+        }
+        
+        .hero h3 {
+            text-align: center;
+            top: 50%;
+            /* left: 35%; */
+            left: 3.5%;
+            position: absolute;
+            color: rgb(255, 166, 0);
+            font-size: 40PX;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Nerko One', cursive;
+        }
+        /* --------------Banner Area Enddd--------------- */
+        /* --------------varients------------- */
+        
+        .varients {
+            background-image: url('images/pexels-kaboompics-com-6205.jpg');
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 60px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            color: #fff;
+        }
+        
+        .varient-text .fas {
+            font-size: 60px;
+            margin: 20px 0;
+        }
+        
+        .varient-text p {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        .varient-text h3 {
+            text-transform: uppercase;
+        }
+        
+        .varient-text:hover {
+            color: yellow;
+        }
+        /* -------------Varient Section End-------------- */
+        /* ----------------Dishes-------------- */
+        
+        .dish-heading {
+            padding: 50px;
+            padding-bottom: 0;
+        }
+        
+        .dish-heading h2 {
+            font-size: 39px;
+            text-align: center;
+            text-decoration: 8px underline rgb(243, 182, 13);
+        }
+        
+        .dishes {
+            padding: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: row wrap;
+        }
+        
+        .dish {
+            width: 350px;
+            height: 250px;
+            margin: 20px;
+            transition: transform 0.5s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            border: 4px solid rgb(243, 182, 13);
+            box-shadow: 20px 20px 20px #333;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .line-break {
+            width: 100%;
+        }
+        
+        .dish img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .dish:hover {
+            transform: scale(1.1);
+        }
+        
+        .info {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(51, 51, 51, .5);
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            color: #fff;
+            text-align: center;
+            /* transform: scale(0); */
+        }
+        
+        .info p {
+            border-top: 2px solid yellow;
+            border-bottom: 2px solid yellow;
+            margin: 10px 14px;
+        }
+        
+        button {
+            border-radius: 20px;
+            background-color: rgba(51, 51, 51, 0.5);
+            font-size: 20px;
+            border: 2px solid black;
+            color: white;
+            padding: 10px;
+        }
+        
+        button:hover {
+            background-color: rgba(243, 182, 13, .5);
+            color: #333;
+        }
+        
+        .dish-button {
+            margin-bottom: 40px;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 0;
+        }
+        
+        .dish-button a {
+            padding: 15px 25px;
+            background-color: rgb(243, 182, 13);
+            border: 2px solid #000;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            transition: all .6s ease-out;
+            margin-top: 40px;
+        }
+        
+        .dish-button a:hover {
+            background-color: yellow;
+            color: rgb(243, 182, 13);
+        }
+        
+        .dish .info:hover {
+            transform: scale(1);
+        }
+        /* ---------------about--------------- */
+        
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px;
+            text-align: center;
+            line-height: 1.5;
+            font-size: 25px;
+            background-color: rgb(31, 26, 26);
+            color: rgb(182, 130, 34);
+            /* border-radius: 50px; */
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        .main-content {
+            width: 55%;
+        }
+        
+        .sidebar {
+            width: 40%;
+        }
+        /* ------------about end---------------- */
+        /* --------------footer start------------- */
+        
+        footer {
+            background-color: rgba(51, 43, 43, 0.952);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+        
+        .social-icons {
+            /* height: 150px; */
+            text-align: center;
+            padding: 20px 0 20px 0;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 0 5px;
+            font-size: 40px;
+            border-radius: 5px;
+            transition: transform 2s ease, color 2s ease;
+        }
+        
+        .facebook {
+            color: #3b5998;
+        }
+        
+        .twitter {
+            color: #38A1F3;
+        }
+        
+        .instagram {
+            color: #e1306c;
+        }
+        
+        .linkedin {
+            color: #0e76a8;
+        }
+        
+        .social-icons a:hover {
+            transform: translateY(-20px);
+        }
+        
+        .copyright {
+            font-size: 18px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        /* --------------------------contact Page--------------- */
+        
+        .contact-div {
+            background-color: rgb(31, 26, 26);
+            height: 90vh;
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            /* border: 4px solid rgb(243, 182, 13); */
+        }
+        
+        .login {
+            width: 65%;
+            background-color: rgb(80, 76, 76);
+            font-family: 'Nerko One', cursive;
+            text-align: center;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border: 4px solid #000000;
+            background-image: url('images/chef-gif.gif');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .login h3 {
+            font-size: 30px;
+            color: #000000;
+        }
+        
+        input[type=text],
+        input[type=password] {
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            Border: 4px solid rgb(182, 130, 34);
+            border-radius: 10px;
+        }
+        
+        input[type=text]:focus,
+        input[type=password]:focus {
+            Border: 4px solid rgb(182, 130, 34);
+        }
+        
+        .submit {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #333;
+        }
+        
+        .submit:hover {
+            background-color: rgb(243, 182, 13);
+        }
+        
+        .signup {
+            width: 30%;
+            background-color: rgb(182, 130, 34);
+            padding: 20px;
+            font-size: 17px;
+            line-height: 2em;
+            font-family: 'Nerko One', cursive;
+        }
+        
+        .signup a {
+            color: #fff;
+            font-family: 'Nerko One', cursive;
+            line-height: 20px;
+            text-decoration: none;
+        }
+        
+        .signup h3 {
+            Text-align: Center;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+        
+        .signup-form {
+            background-color: rgba(252, 206, 0, 0.753);
+            width: 100%;
+            height: 300px;
+            margin-top: 10px;
+            box-shadow: 7px 7px 10px #333;
+            text-align: center;
+        }
